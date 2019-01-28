@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the tab buttons */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  height: 100px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.tabcontent img {
+  position: relative;
+  top: 10px;
+}
+/* Style each tab content individually */
+#United {background-color: rgb(219, 14, 14);}
+#Paris {background-color: rgb(0, 63, 108);}
+#City {background-color: rgb(152, 194, 232);}
+#Borussia {background-color: rgb(245, 218, 0);}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  top: -1px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
