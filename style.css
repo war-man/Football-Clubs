@@ -78,3 +78,52 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/*styling section with boss, player, trainer*/
+.mainPeople {
+  display: grid;
+  height: 400px;
+  width: 100%;
+  background-color: hsla(0, 0%, 33%, 1);
+  position: relative;
+  top: -23px;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  justify-items: center;
+  align-items: center;
+  font-weight: 200;
+}
+
+.boss {
+  grid-column: 2;
+}
+
+.star {
+  grid-column: 1;
+}
+
+.trainer {
+  grid-column: 3;
+}
+
+.title {
+  position: relative;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+  letter-spacing: 1.8px;
+}
+
+.name {
+  background: #F00000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  top: -4px;
+  padding: 10px;
+  letter-spacing: 1px;
+}
