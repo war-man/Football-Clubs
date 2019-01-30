@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
 }
 
 /* Style the tab buttons */
@@ -84,7 +84,7 @@
   display: grid;
   height: 400px;
   width: 100%;
-  background-color: hsla(0, 0%, 33%, 1);
+  background-color: hsla(0, 0%, 10%, 1);
   position: relative;
   top: -23px;
   grid-template-columns: 1fr, 1fr, 1fr;
@@ -126,4 +126,32 @@
   top: -4px;
   padding: 10px;
   letter-spacing: 1px;
+}
+
+.intro {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  top: -23px;
+
+}
+
+.squad {
+  grid-area: 1/1/1/1;
+  background-color: #060647;
+}
+
+.info {
+  grid-area: 1/2/1/2;
+  background: #F00000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B81D14, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B81D14, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.info img {
+  margin-top: 30px;
+  margin-left: 130px;
 }
