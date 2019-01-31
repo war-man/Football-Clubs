@@ -181,4 +181,24 @@
     opacity: 0.9;
     position: relative; }
 
+.button {
+  position: relative;
+  top: 30px;
+  padding: 20px 40px 20px 40px;
+  background-color: #B81D14;
+  margin: 30px 50px 30px 50px;
+  font-size: 20px;
+  color: white;
+  opacity: 0.9;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  letter-spacing: 0.9px;
+  border-radius: 2px;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none; }
+
 /*# sourceMappingURL=style.css.map */

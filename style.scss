@@ -9,6 +9,26 @@ $mainFont: 'Oswald', sans-serif;
   opacity: $opacity;
   position: relative;
 }
+@mixin button($top, $padding, $color, $margin) {
+  position: relative;
+  top: $top;
+  padding: $padding;
+  background-color: $color;
+  margin: $margin;
+  font-size: 20px;
+  color: white;
+  opacity: 0.9;
+  font-family: $mainFont;
+  border: none;
+  letter-spacing: 0.9px;
+  border-radius: 2px;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
 
 * {
   margin: 0;
@@ -193,4 +213,9 @@ $mainFont: 'Oswald', sans-serif;
   h2 {
     @include info (0.9);
   }
+}
+
+.button {
+  @include button(30px,20px 40px 20px 40px,#B81D14,30px 50px 30px 50px);
+
 }
