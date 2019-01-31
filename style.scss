@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500');
+$mainFont: 'Oswald', sans-serif;
+@mixin info($opacity){
+  top: 50px;
+  font-family: $mainFont;
+  color: white;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+  opacity: $opacity;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Style the tab buttons */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  font-family: $mainFont;
+    &:hover {
+      background-color: #777;
+    }
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  height: 100px;
+  font-family: $mainFont;
+   img {
+     position: relative;
+     top: 10px;
+   }
+}
+
+/* Style each tab content individually */
+#United {background-color: rgb(219, 14, 14);}
+#Paris {background-color: rgb(0, 63, 108);}
+#City {background-color: rgb(152, 194, 232);}
+#Borussia {background-color: rgb(245, 218, 0);}
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  top: -1px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*styling section with boss, player, trainer*/
+.mainPeople {
+  display: grid;
+  height: 400px;
+  width: 100%;
+  background-color: hsla(0, 0%, 10%, 1);
+  position: relative;
+  top: -23px;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  justify-items: center;
+  align-items: center;
+  font-weight: 200;
+}
+
+.boss {
+  grid-column: 2;
+}
+
+.star {
+  grid-column: 1;
+}
+
+.trainer {
+  grid-column: 3;
+}
+
+.title {
+  position: relative;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: $mainFont;
+  padding: 10px;
+  letter-spacing: 1.8px;
+}
+
+.name {
+  background: #F00000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  position: relative;
+  font-family: $mainFont;
+  top: -4px;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.intro {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  top: -23px;
+
+}
+
+.squad {
+  grid-area: 1/1/1/1;
+  background-color: #060647;
+}
+
+.info {
+  grid-area: 1/2/1/2;
+  background: #F00000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B81D14, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B81D14, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  img {
+    margin-top: 30px;
+    margin-left: 130px;
+  }
+  .line {
+    width: 70%;
+    border-bottom: solid 3px hsla(0,100%,100%,0.8);
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+  }
+
+  h1 {
+    font-family: $mainFont;
+    position: relative;
+    top: 40px;
+    color: white;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    opacity: 0.9;
+  }
+
+  p {
+    @include info(0.75);
+  }
+
+  h2 {
+    @include info (0.9);
+  }
+
+}
