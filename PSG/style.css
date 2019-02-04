@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500");
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  height: 100px;
+  font-family: "Oswald", sans-serif; }
+  .tabcontent img {
+    position: relative;
+    top: 10px; }
+
+/* Style the tab buttons */
+.tablink {
+  background-color: #555;
+  color: white;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  font-family: "Oswald", sans-serif; }
+  .tablink:hover {
+    background-color: #777; }
+
+/* Style each tab content individually */
+#United {
+  background-color: #db0e0e; }
+
+#Paris {
+  background-color: #003f6c; }
+
+#City {
+  background-color: #98c2e8; }
+
+#Borussia {
+  background-color: #f5da00; }
+
+/*# sourceMappingURL=style.css.map */

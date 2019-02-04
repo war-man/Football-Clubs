@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500');
+$mainFont: 'Oswald', sans-serif;
+@mixin info($opacity){
+  top: 53px;
+  font-family: $mainFont;
+  color: white;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+  opacity: $opacity;
+  position: relative;
+}
+@mixin button($top, $padding, $color, $margin) {
+  position: relative;
+  top: $top;
+  padding: $padding;
+  background-color: $color;
+  margin: $margin;
+  font-size: 20px;
+  color: white;
+  opacity: 0.9;
+  font-family: $mainFont;
+  border: none;
+  letter-spacing: 0.9px;
+  border-radius: 2px;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  height: 100px;
+  font-family: $mainFont;
+   img {
+     position: relative;
+     top: 10px;
+   }
+}
+
+/* Style the tab buttons */
+.tablink {
+  background-color: #555;
+  color: white;
+  border: none;
+  outline: none!important;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  font-family: $mainFont;
+    &:hover {
+      background-color: #777;
+    }
+
+}
+
+/* Style each tab content individually */
+#United {background-color: rgb(219, 14, 14);}
+#Paris {background-color: rgb(0, 63, 108);}
+#City {background-color: rgb(152, 194, 232);}
+#Borussia {background-color: rgb(245, 218, 0);}

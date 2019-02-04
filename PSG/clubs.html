@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Football Clubs</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="slideOnLoad()">
+  <!--navbar-->
+  <div id="United" class="tabcontent">
+  <center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png" alt="logo psg" height="80px" width="80px" /></center>
+  </div>
+
+  <div id="Paris" class="tabcontent">
+  <center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" alt="logo psg" height="80px" width="80px" /></center>
+  </div>
+
+  <div id="City" class="tabcontent">
+  <center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" alt="logo psg" height="80px" width="80px" /></center>
+  </div>
+
+  <div id="Borussia" class="tabcontent">
+  <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/240px-Borussia_Dortmund_logo.svg.png" alt="logo psg" height="80px" width="80px" /></center>
+  </div>
+  <!--buttons in navbar-->
+  <div class="container-fluid">
+    <div class="row">
+      <button class="col-sm tablink" onclick="openCity('United', this, 'rgb(219, 14, 14)')">Manchester United</button>
+      <button class="col-sm tablink" onclick="openCity('Paris', this, 'rgb(0, 63, 108)')" id="defaultOpen">Paris Saint Germain</button>
+      <button class="col-sm tablink" onclick="openCity('City', this, 'rgb(152, 194, 232')">Manchester City</button>
+      <button class="col-sm tablink" onclick="openCity('Borussia', this, 'rgb(245, 218, 0)')">Borussia Dortmund</button>
+    </div>
+  </div>
+    <img src="https://www.foxsportsasia.com/uploads/2018/11/neymarmbappecropped_isk7lqtbodyt138l83kyj8czv.jpg" style="width:100%" height="auto" />
+  <br>
+<script src="main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
