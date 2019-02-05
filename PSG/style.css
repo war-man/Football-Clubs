@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500");
 @import url("https://fonts.googleapis.com/css?family=Staatliches");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 /*PC*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .video {
     background-color: #060647; }
     .video iframe {
@@ -66,7 +67,33 @@
     display: block;
     width: 420px;
     height: 250px;
-    margin: 30px 0px 30px 0px; } }
+    margin: 30px 0px 30px 0px;
+    border: solid 1px rgba(77, 77, 77, 0.8);
+    border-radius: 3px; }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.foxsportsasia.com/uploads/2018/11/neymarmbappecropped_isk7lqtbodyt138l83kyj8czv.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 650px; }
+
+  .hero-text {
+    text-align: end;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1.5px;
+    opacity: 0.8; }
+    .hero-text h1 {
+      font-size: 60px; }
+    .hero-text p {
+      font-size: 30px; } }
 /*SMARTPHONES*/
 @media screen and (max-width: 576px) {
   .video {
@@ -120,9 +147,34 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; } }
+    border-bottom-right-radius: 5px;
+    border: solid 1px rgba(77, 77, 77, 0.8); }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.foxsportsasia.com/uploads/2018/11/neymarmbappecropped_isk7lqtbodyt138l83kyj8czv.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px; }
+
+  .hero-text {
+    text-align: end;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1.2px;
+    opacity: 0.8; }
+    .hero-text h1 {
+      font-size: 30px; }
+    .hero-text p {
+      font-size: 20px; } }
 /*TABLETS*/
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1200px) {
   .video {
     background-color: #060647; }
     .video iframe {
@@ -174,7 +226,32 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; } }
+    border-bottom-right-radius: 5px;
+    border: solid 1px rgba(77, 77, 77, 0.8); }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.foxsportsasia.com/uploads/2018/11/neymarmbappecropped_isk7lqtbodyt138l83kyj8czv.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 420px; }
+
+  .hero-text {
+    text-align: end;
+    position: absolute;
+    top: 80%;
+    left: 72%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+    opacity: 0.8; }
+    .hero-text h1 {
+      font-size: 40px; }
+    .hero-text p {
+      font-size: 30px; } }
 * {
   margin: 0;
   padding: 0; }

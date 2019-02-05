@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500');
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 $mainFont: 'Oswald', sans-serif;
+
+$grid-breakpoints: (
+  xs: 375px,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px
+) !default;
+
+$container-max-widths: (
+  xs: 375px,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px
+) !default;
+
 @mixin info($opacity){
   font-family: $mainFont;
   color: white;
@@ -30,8 +48,41 @@ $mainFont: 'Oswald', sans-serif;
     -o-user-select: none; }
 }
 
+@mixin heroImage($height) {
+  .hero-image {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.foxsportsasia.com/uploads/2018/11/neymarmbappecropped_isk7lqtbodyt138l83kyj8czv.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     height: $height;
+  }
+}
+
+@mixin heroText($head-size, $p-size, $letter-spacing, $left) {
+  .hero-text {
+    text-align: end;
+    position: absolute;
+    top: 80%;
+    left: $left;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: $letter-spacing;
+    opacity: 0.8;
+    h1 {
+      font-size: $head-size;
+    }
+    p {
+      font-size: $p-size;
+    }
+  }
+}
+
+
 /*PC*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .video {
     background-color: #060647;
     iframe {
@@ -84,7 +135,12 @@ $mainFont: 'Oswald', sans-serif;
   width: 420px;
   height: 250px;
   margin: 30px 0px 30px 0px;
+  border: solid 1px hsla(0,0%,30%,0.8);
+  border-radius: 3px;
 }
+
+@include heroImage(650px);
+@include heroText(60px, 30px, 1.5px, 60%);
  }
 
 /*SMARTPHONES*/
@@ -125,11 +181,15 @@ $mainFont: 'Oswald', sans-serif;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border: solid 1px hsla(0,0%,30%,0.8);
 }
+
+@include heroImage(300px);
+@include heroText(30px, 20px, 1.2px, 60%);
 }
 
 /*TABLETS*/
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1200px) {
   .video {
     background-color: #060647;
     iframe {
@@ -166,7 +226,11 @@ $mainFont: 'Oswald', sans-serif;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border: solid 1px hsla(0,0%,30%,0.8);
 }
+
+@include heroImage(420px);
+@include heroText(40px, 30px, 1px, 72%);
 }
 
 
