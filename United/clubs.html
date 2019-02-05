@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Football Clubs</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="slideOnLoad()">
+  <!--navbar-->
+  <div id="United" class="tabcontent">
+  <center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png" alt="logo manchester united" height="80px" width="80px" /></center>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" alt="logo psg" height="80px" width="80px" /></center>
+</div>
+
+<div id="City" class="tabcontent">
+  <center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" alt="logo manchester city" height="80px" width="80px" /></center>
+</div>
+
+<div id="Borussia" class="tabcontent">
+  <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/240px-Borussia_Dortmund_logo.svg.png" alt="logo borussia dortmund" height="80px" width="80px" /></center>
+</div>
+
+<!--buttons in navbar-->
+<div>
+  <button class="tablink" onclick="openCity('United', this, 'rgb(219, 14, 14)')">Manchester United</button>
+  <button class="tablink" onclick="openCity('Paris', this, 'rgb(0, 63, 108)')" id="defaultOpen">Paris Saint Germain</button>
+  <button class="tablink" onclick="openCity('City', this, 'rgb(152, 194, 232')">Manchester City</button>
+  <button class="tablink" onclick="openCity('Borussia', this, 'rgb(245, 218, 0)')">Borussia Dortmund</button>
+</div>
+<br><br><br>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="http://as01.epimg.net/en/imagenes/2018/02/02/football/1517567904_411158_1517569645_noticia_normal.jpg" style="width:100%" height="620px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.kinja-img.com/gawker-media/image/upload/s--C4M1wRJF--/c_fill,f_auto,fl_progressive,g_center,h_675,q_80,w_1200/z6nthyi7fhsuceevo491.jpg" style="width:100%" height="620px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://www.foxsportsasia.com/uploads/2018/11/neymarmbappecropped_isk7lqtbodyt138l83kyj8czv.jpg" style="width:100%" height="620px">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!--container with boss, trainer and best player-->
+<div class="mainPeople">
+  <div class="star">
+    <center>
+    <p class="title">GWIAZDA</p>
+    <a target="_blank" href="https://pl.wikipedia.org/wiki/Neymar">
+    <img src="https://www.diariogol.com/uploads/s1/61/58/46/2/neymar-psg-2019_15_970x597.jpeg" height="230px" width="400px" />
+    </a>
+    <p class="name">Neymar Jr</p>
+  </center>
+  </div>
+  <div class="boss">
+    <center>
+    <p class="title">PREZES</p>
+    <a target="_blank" href="https://pl.wikipedia.org/wiki/Nasser_Al-Khela%C3%AFfi">
+    <img src="http://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fefae980a-af5d-11e7-88ab-06bb8ee1988e.jpg?crop=4933%2C2775%2C0%2C257" height="230px" width="400px" />
+    </a>
+    <p class="name">Nasser Al-Khelaïfi</p>
+    </center>
+  </div>
+  <div class="trainer">
+    <center>
+    <p class="title">TRENER</p>
+    <a target="_blank" href="https://pl.wikipedia.org/wiki/Thomas_Tuchel">
+    <img src="https://psgimages.stadion.io/media/15711/pap-tuchel-2.jpg?mode=crop&width=800&height=450&quality=60" height="230px" width="400px" />
+    </a>
+    <p class="name">Thomas Tuchel</p>
+    </center>
+  </div>
+</div>
+<div class="intro">
+  <div class="squad">
+   <center>
+    <iframe width="625" height="350"
+    src="https://www.youtube-nocookie.com/embed/4UWeNo4bJ50" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  </iframe>
+  <br>
+    <button class="button" onclick="window.open('https://www.google.com/search?q=psg&oq=psg&aqs=chrome.0.69i59j69i60j69i59j69i61l2j69i59.324j0j7&sourceid=chrome&ie=UTF-8#sie=t;/m/01_1kk;2;/m/044hxl;mt;fp;1;;')">ostatnie mecze</button>
+    <button class="button" onclick="window.open('https://www.google.com/search?q=psg&oq=psg&aqs=chrome.0.69i59j69i60j69i59j69i61l2j69i59.324j0j7&sourceid=chrome&ie=UTF-8#sie=t;/m/01_1kk;2;/m/044hxl;st;fp;1;;')">aktualna tabela</button>
+   </center>
+  </div>
+  <div class="info">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" alt="logo" width="150px" height="150px" />
+    <div class="line">
+    </div>
+    <center><h1>Paris Saint Germain</h1></center>
+    <center>
+      <h2>Stadion</h2>
+      <p>Parc des Princes</p>
+      <br>
+      <h2>Główny trener</h2>
+      <p>Thomas Tuchel</p>
+      <br>
+      <h2>Właściciel</h2>
+      <p>Qatar Sports Investments</p>
+      <br>
+      <h2>Ligi</h2>
+      <p> Liga Mistrzów UEFA, Francja Ligue 1</p>
+    </center>
+
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

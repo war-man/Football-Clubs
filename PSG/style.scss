@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500');
 $mainFont: 'Oswald', sans-serif;
 @mixin info($opacity){
-  top: 53px;
   font-family: $mainFont;
   color: white;
   letter-spacing: 0.6px;
@@ -9,26 +8,104 @@ $mainFont: 'Oswald', sans-serif;
   opacity: $opacity;
   position: relative;
 }
-@mixin button($top, $padding, $color, $margin) {
-  position: relative;
-  top: $top;
-  padding: $padding;
-  background-color: $color;
-  margin: $margin;
-  font-size: 20px;
-  color: white;
-  opacity: 0.9;
-  font-family: $mainFont;
-  border: none;
-  letter-spacing: 0.9px;
-  border-radius: 2px;
-  cursor: pointer;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
+@media screen and (min-width: 992px) {
+  .video {
+    background-color: #060647;
+    iframe {
+      height: 320px;
+      width: 625px;
+      margin-top: 50px;
+      border: solid #B81D14 15px;
+      border-radius: 8px;
+  }
+ }
+
+ .button {
+   padding: 20px 40px 20px 40px;
+   background-color: #B81D14;
+   margin: 35px 30px 5px 30px;
+   font-size: 20px;
+   color: white;
+   opacity: 0.9;
+   font-family: "Oswald", sans-serif;
+   border: none;
+   letter-spacing: 0.9px;
+   border-radius: 2px;
+   outline: none!important;
+   cursor: pointer;
+   user-select: none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -o-user-select: none; }
+ }
+@media screen and (max-width: 576px) {
+  .video {
+    background-color: #060647;
+    iframe {
+      height: auto;
+      width: auto;
+      position: relative;
+      margin-top: 50px;
+      border: solid #B81D14 15px;
+      border-radius: 8px;
+  }
+ }
+
+ .button {
+   position: relative;
+   padding: 20px 40px 20px 40px;
+   background-color: #B81D14;
+   margin: 20px 30px 20px 30px;
+   font-size: 20px;
+   color: white;
+   opacity: 0.9;
+   font-family: "Oswald", sans-serif;
+   border: none;
+   letter-spacing: 0.9px;
+   outline: none!important;
+   border-radius: 2px;
+   cursor: pointer;
+   user-select: none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -o-user-select: none; }
 }
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .video {
+    background-color: #060647;
+    iframe {
+      height: 320px;
+      width: 576px;
+      position: relative;
+      margin-top: 50px;
+      border: solid #B81D14 15px;
+      border-radius: 8px;
+  }
+ }
+
+ .button {
+   position: relative;
+   padding: 20px 40px 20px 40px;
+   background-color: #B81D14;
+   margin: 20px 30px 20px 30px;
+   font-size: 20px;
+   color: white;
+   opacity: 0.9;
+   font-family: "Oswald", sans-serif;
+   border: none;
+   letter-spacing: 0.9px;
+   border-radius: 2px;
+   outline: none!important;
+   cursor: pointer;
+   user-select: none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -o-user-select: none; }
+}
+
 
 * {
   margin: 0;
@@ -41,10 +118,6 @@ $mainFont: 'Oswald', sans-serif;
   display: none;
   height: 100px;
   font-family: $mainFont;
-   img {
-     position: relative;
-     top: 10px;
-   }
 }
 
 /* Style the tab buttons */
@@ -69,3 +142,44 @@ $mainFont: 'Oswald', sans-serif;
 #Paris {background-color: rgb(0, 63, 108);}
 #City {background-color: rgb(152, 194, 232);}
 #Borussia {background-color: rgb(245, 218, 0);}
+
+
+
+.info {
+  background: #F00000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B81D14, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B81D14, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: auto;
+  img {
+    position: relative;
+    top: 20px;
+  }
+  .line {
+    width: 70%;
+    border-bottom: solid 3px hsla(0,100%,100%,0.8);
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+  }
+
+  h1 {
+    font-family: $mainFont;
+    color: white;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    opacity: 0.9;
+  }
+
+  p {
+    @include info(0.75);
+  }
+
+  h2 {
+    @include info (0.9);
+  }
+}
+
+.details {
+  position: relative;
+  top: 50px;
+}
